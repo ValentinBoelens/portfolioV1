@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+</head>
+<body> 
+    <header>
+        <div id="nom_profession">
+            <img id="puce" src="images/puce.png" alt="Puce Logo">
+            <h2 id="nom">Valentin Boelens</h2>
+            <h3 id="profession">Étudiant en BUT Informatique</h3>
+        </div>
+        <nav>
+            <a class="menu" href="index.html">Accueil</a>
+            <a class="menu" href="about.html">À propos de moi</a>
+            <a class="menu" href="activites.html">Activités</a>
+            <div class="menu">
+                <span>Médias</span>
+                <a class="sousMenu" href="galerie.html">Galerie</a>
+                <a class="sousMenu" href="videos.html">Vidéos</a>
+            </div>
+            <a class="menu" id="lastMenu" href="contact.html">Contact</a>
+        </nav>
+
+        <div id="linkbox">
+            
+            <a href="https://github.com/ValentinBoelens/">
+                <img class="logo_reseaux" src="images/githublogo.webp" alt="GitHub Logo">
+            </a>
+            <a href="https://www.linkedin.com/in/valentin-boelens/">
+                <img class="logo_reseaux" src="images/linkedinlogo.png" alt="LinkedIn Logo">
+            </a>
+               
+        </div>
+    </header>
+    <main id="container_activites">
+    <h1 class="titre">Activités</h1>
+    <table id="table_activites">
+        <caption>Récapitulatif de mes projets de programmation et d'analyse</caption>
+        <tr>
+            <th id="header" colspan="5" scope="colgroup">Projets scolaires et extra-scolaires</th>
+        </tr>
+        <tr>
+            <th scope="col">Catégorie</th>
+            <th scope="col">Nom du projet</th>
+            <th scope="col">Description</th>
+            <th scope="col">Période</th>
+            <th scope="col">Image</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Scolaire</td>
+            <td><em>Maze</em></td>
+            <td>Jeu de maze : déplacer une bille<br/>
+                aux flèches directionnelles sans toucher les bords</td>
+            <td>2016</td>
+            <td><img src="images/python.png" width="40px" alt="Logo Python"></td>
+        </tr>
+        <tr>
+            <td><em>Site web</em></td>
+            <td>Site web multipages vitrine d'une salle de musculation</td>
+            <td>2017</td>
+            <td><img src="images/htmlcss.jpeg" width="70px" alt="Logo HTML et CSS"></td>
+        </tr>
+        <tr>
+            <td>Extra-scolaire</td>
+            <td><em>Les passagers du titanic</em></td>
+            <td>Analyse des chances de survie des différentes<br/>
+                catégories de passager du Titanic</td>
+            <td>2025</td>
+            <td><img src="images/pythonpandas.png" width="100px" alt="Logo Python et Pandas"></td>
+        </tr>
+    </table>
+    <p>Le tableau ci-dessus regroupe les projets scolaires et extra-scolaires que j'ai eu l'occasion de réaliser en lien avec l'informatique.</p>
+    </main>
+    <footer>
+        <p>&copy; 2025 Valentin Boelens. Tous droits réservés.</p>
+        <p>Première année | Groupe 8</p>
+        <p>Contactez-moi : <a href="mailto:valentin.boelens@etu.uca.fr">valentin.boelens@etu.uca.fr</a></p>
+    </footer>
+    </body>
+</html>

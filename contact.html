@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+</head>
+<body> 
+    <header>
+        <div id="nom_profession">
+            <img id="puce" src="images/puce.png" alt="Puce Logo">
+            <h2 id="nom">Valentin Boelens</h2>
+            <h3 id="profession">Étudiant en BUT Informatique</h3>
+        </div>
+        <nav>
+            <a class="menu" href="index.html">Accueil</a>
+            <a class="menu" href="about.html">À propos de moi</a>
+            <a class="menu" href="activites.html">Activités</a>
+            <div class="menu">
+                <span>Médias</span>
+                <a class="sousMenu" href="galerie.html">Galerie</a>
+                <a class="sousMenu" href="videos.html">Vidéos</a>
+            </div>
+            <a class="menu" id="lastMenu" href="contact.html">Contact</a>
+        </nav>
+
+        <div id="linkbox">
+            
+            <a href="https://github.com/ValentinBoelens/">
+                <img class="logo_reseaux" src="images/githublogo.webp" alt="GitHub Logo">
+            </a>
+            <a href="https://www.linkedin.com/in/valentin-boelens/">
+                <img class="logo_reseaux" src="images/linkedinlogo.png" alt="LinkedIn Logo">
+            </a>
+               
+        </div>
+    </header>
+    <main id="container_contact">
+        <h1 class="titre">Contact</h1>
+        <form method="POST" action="script.php" id="contact_form">
+            <div class="doublet">
+                <div class="form_group">
+                    <label for="name">Prénom :</label>
+                    <input type="text" id="name" name="name" placeholder="Jean" required>
+                </div>
+                <div class="form_group">
+                    <label for="lastname">Nom :</label>
+                    <input type="text" id="lastname" name="lastname" placeholder="Dupont" required>
+                </div>
+            </div>
+
+            <div class="doublet">
+                <div class="form_group">
+                    <label for="tel">N° de téléphone</label>
+                    <input type="text" id="tel" name="tel", placeholder="06 XX XX XX XX">
+                </div>
+
+                <div class="form_group">
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" placeholder="adresse@mail.com" required>
+                </div>
+            </div>
+
+            <div class="doublet">
+                <div class="form_group">
+                    <label for="motif">Motif :</label>
+                    <select id="motif" name="motif">
+                        <option value="" selected disabled hidden>Motif</option>
+                        <option value="emploi">Emploi</option>
+                        <option value="stage">Stage</option>
+                        <option value="alternance">Alternance</option>
+                        <option value="entretien">Entretien</option>
+                        <option value="autre">Autre</option>
+                    </select>
+                </div>
+
+                <div class="form_group">
+                    <label for="creneau">Créneau :</label>
+                    <input type="datetime-local" id="creneau" name="creneau">
+                </div>
+            </div>
+
+            <div class="form_group">
+                <span>Premier contact :</span>
+                <div id="firstContact">
+                    <div class="radio">
+                        <label for="oui">Oui</label>
+                        <input type="radio" id="oui" name="premiere" value="oui" checked>
+                    </div>
+                    <div class="radio">
+                        <label for="non">Non</label>
+                        <input type="radio" id="non" name="premiere" value="non">
+                    </div>
+                </div>
+            </div>
+
+
+            
+            <div class="form_group" id="message">
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <div class="doublet">
+                <button class="submitReset_buttons" type="submit">Envoyer</button>
+                <button class="submitReset_buttons" type="reset">Réinitialiser</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Valentin Boelens. Tous droits réservés.</p>
+        <p>Première année | Groupe 8</p>
+        <p>Contactez-moi : <a href="mailto:valentin.boelens@etu.uca.fr">valentin.boelens@etu.uca.fr</a></p>
+    </footer>
+</body>
+</html>
